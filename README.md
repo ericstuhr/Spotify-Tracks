@@ -5,19 +5,19 @@ mash up of two spotify projects to get tracks from a playlist
 This is NOT original code, it is simply a modification of another guide (in order to bypass the limitation on how many tracks can be pulled, and to simplifiy the installation/use process).
 
 # Tom Baranowicz Guide
-https://www.youtube.com/watch?v=Bk90lT6ne3g
-code from his repository that I modified
+https://www.youtube.com/watch?v=Bk90lT6ne3g  
+code from his repository that I modified:  
 https://github.com/tombaranowicz/SpotifyPlaylistExport
 
 # Spotify official guide
-https://developer.spotify.com/documentation/web-api/quick-start/
+https://developer.spotify.com/documentation/web-api/quick-start/  
 https://github.com/spotify/web-api-auth-examples
 
 # Installation
-To begin, you're going to want to set up a spotify API account, with a good tutorial provided here
+To begin, you're going to want to set up a spotify API account, with a good tutorial provided here  
 https://developer.spotify.com/documentation/web-api/quick-start/
 
-If you do not have node.js installed, the above guide also explains how to install it.
+If you do not have node.js installed, the above guide also explains how to install it.  
 
 There are three main dependencies (npm should come with node.js automatically).  
 spotify web api ----> npm install spotify-web-api-node --save  
