@@ -28,11 +28,12 @@ express -----> npm install express
 # Setup
 Once you have a folder set up with these modules and the javascript files, you will need to modify the index file first.
 Replace clientId and clientSecret with the corresponding values on your spotify API account. You will also need to add urls
-that have access, both http://localhost:8888/callback and http://localhost:8888
+that have access, both http://localhost:8888/callback and http://localhost:8888  
+To add urls, you go into the settings of your spotify developer account.  
 
 # Use
-Now, go into your terminal/commandPrompt and navigate to the folder containing these files, and run the command: node index
-Then, proceed to the URL that is logged to the console (your localhost).
+Now, go into your terminal/commandPrompt and navigate to the folder containing these files, and run the command: node index.  
+Then, proceed to the URL that is logged to the console (your localhost).  
 You should be prompted to login, and once successful, there will be an accesstoken in the console log, copy this, then paste it
 into the appropriate place in the getMe file. 
 
