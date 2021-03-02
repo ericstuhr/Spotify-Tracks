@@ -19,17 +19,11 @@ https://developer.spotify.com/documentation/web-api/quick-start/
 
 If you do not have node.js installed, the above guide also explains how to install it.
 
-It may be easier to simply clone this repository in full and not have to install the modules manually. 
+There are three main dependencies (npm should come with node.js automatically).
+spotify web api ----> npm install spotify-web-api-node --save
+superagent -----> npm install superagent
+express -----> npm install express
 
-To install manually, you will need more than one source of installations (this is why I am trying to make my own guide)
-You will primarily be using code from https://github.com/thelinmichael/spotify-web-api-node/
-This is what is referenced in Tom's guide. It is, however, missing modules, which you can then pull from spotify's own guide.
-In the folder with the files, use: npm install spotify-web-api-node --save
-
-
-
-IMPORTANT: do not attempt to use these outside of personal use, since the installations of the modules are not all up to date, even on
-the spotify official guide repository. 
 
 # Setup
 Once you have a folder set up with these modules and the javascript files, you will need to modify the index file first.
