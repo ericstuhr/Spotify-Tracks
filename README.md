@@ -19,10 +19,10 @@ https://developer.spotify.com/documentation/web-api/quick-start/
 
 If you do not have node.js installed, the above guide also explains how to install it.
 
-There are three main dependencies (npm should come with node.js automatically).
-spotify web api ----> npm install spotify-web-api-node --save
-superagent -----> npm install superagent
-express -----> npm install express
+There are three main dependencies (npm should come with node.js automatically).  
+spotify web api ----> npm install spotify-web-api-node --save  
+superagent -----> npm install superagent  
+express -----> npm install express  
 
 
 # Setup
