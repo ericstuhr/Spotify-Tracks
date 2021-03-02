@@ -2,7 +2,7 @@
 mash up of two spotify projects to get tracks from a playlist
 
 # Introduction
-This is NOT original code, it is simply a modification of another guide (in order to bypass the limitation on how many tracks can be pulled).
+This is NOT original code, it is simply a modification of another guide (in order to bypass the limitation on how many tracks can be pulled, and to simplifiy the installation/use process).
 
 # Tom Baranowicz Guide
 https://www.youtube.com/watch?v=Bk90lT6ne3g
