@@ -28,7 +28,7 @@ async function getUserPlaylists(userName) {
     
     let tracks = await getPlaylistTracks(playlist.id, playlist.name);
     // console.log(tracks);
-
+	
     const tracksJSON = { tracks }
     let data = JSON.stringify(tracksJSON);
     fs.writeFileSync(playlist.name+'.json', data);
@@ -39,7 +39,7 @@ async function getUserPlaylists(userName) {
 async function getPlaylistTracks(playlistId, playlistName) {
 
   const data = await spotifyApi.getPlaylistTracks(playlistId, {
-    offset: 1,
+    offset: 0,
     limit: 100,
     fields: 'items'
   })
