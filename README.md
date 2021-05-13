@@ -37,4 +37,6 @@ Then, proceed to the URL that is logged to the console (your localhost).
 You should be prompted to login, and once successful, there will be an accesstoken in the console log, copy this, then paste it
 into the appropriate place in the getMe file. 
 
+Hit control and c to stop the current routine that's having the local host open.
+
 Now, you should be able to run node getMe, and your tracks will output both in the console, and in json files that appear in the same directory. 
