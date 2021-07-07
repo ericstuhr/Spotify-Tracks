@@ -32,7 +32,7 @@ that have access, both http://localhost:8888/callback and http://localhost:8888
 To add urls, you go into the settings of your spotify developer account.  
 
 # Use
-Now, go into your terminal/commandPrompt and navigate to the folder containing these files, and run the command: node index.  
+Now, go into your terminal/commandPrompt and navigate to the folder containing these files, and run the command: node index  
 Then, proceed to the URL that is logged to the console (your localhost).  
 You should be prompted to login, and once successful, there will be an accesstoken in the console log, copy this, then paste it
 into the appropriate place in the getMe file. 
