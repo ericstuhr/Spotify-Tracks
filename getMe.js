@@ -1,6 +1,6 @@
 const fs = require('fs')
 const SpotifyWebApi = require('spotify-web-api-node');
-const token = "token";
+const token = "token here"
 
 const spotifyApi = new SpotifyWebApi();
 spotifyApi.setAccessToken(token);
@@ -25,13 +25,25 @@ async function getUserPlaylists(userName) {
 
   for (let playlist of data.body.items) {
     console.log(playlist.name + " " + playlist.id)
+	
+	let tracksANDsongNames = await getPlaylistTracks(playlist.id, playlist.name);
     
-    let tracks = await getPlaylistTracks(playlist.id, playlist.name);
+    let tracks = tracksANDsongNames[0];
+	let songNames = tracksANDsongNames[1];
     // console.log(tracks);
 	
+	//json stuff
     const tracksJSON = { tracks }
     let data = JSON.stringify(tracksJSON);
     fs.writeFileSync(playlist.name+'.json', data);
+	
+	//Making a text file now
+	//step one, turn the big array of songNames into one string with newline characters
+	let combinedSongs = songNames.join("\r\n");
+	console.log(combinedSongs);
+	fs.writeFileSync(playlist.name+'.txt', combinedSongs);
+	
+	
   }
 }
 
@@ -69,18 +81,20 @@ async function getPlaylistTracks(playlistId, playlistName) {
   // console.log("'" + playlistName + "'" + ' contains these tracks:');
   let tracks = [];
   var datas = [data, data2, data3, data4, data5];
+  var songNames = [];
   console.log(datas.length);
   for (i = 0; i < datas.length; i++){
 	for (let track_obj of datas[i].body.items) {
       const track = track_obj.track
       tracks.push(track);
-      console.log(track.name + " : " + track.artists[0].name)
+	  songNames.push(track.name);
+      //console.log(track.name + " : " + track.artists[0].name)
     }
   }
   
   
   console.log("---------------+++++++++++++++++++++++++")
-  return tracks;
+  return [tracks,songNames];
 }
 
 getMyData();
