@@ -40,7 +40,8 @@ async function getUserPlaylists(userName) {
 	//Making a text file now
 	//step one, turn the big array of songNames into one string with newline characters
 	let combinedSongs = songNames.join("\r\n");
-	console.log(combinedSongs);
+	//output to console for testing, or if you just want it
+	//console.log(combinedSongs);
 	fs.writeFileSync(playlist.name+'.txt', combinedSongs);
 	
 	
